@@ -1,0 +1,441 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+*
+{
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+:root
+{
+    --c:#ff2f00;
+}
+.nav_logo,
+.Home,
+.Home .min_home_sec,
+.Home .min_home_sec .img,
+.Home .min_home_sec .text,
+.Home .text .icon_sec,
+.video,
+.video .title,
+.video .video_grid .card_width,
+.video .video_grid .card_width .min_card,
+.blog,
+.blog .text,
+.blog .info,
+.info_sec,
+.info_sec .title,
+.info_sec .vlog_sec,
+.info_sec .vlog_sec .vlog_card .vlog_text,
+.info_sec .vlog_sec .vlog_card .vlog_img,
+.contact .text,
+.contact .info_sec_con,
+.contact .info_sec_con .img,
+.contact .info_sec_con .from
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav_logo
+{
+    width: 100%;
+    height: 10vh;
+    /* background: #fff; */
+    position: absolute;
+    box-shadow: 0px 0px 5px rgb(255, 255, 255);
+    top: 0%;
+    justify-content: space-around;
+}
+.nav_logo nav ul
+{
+    display: flex;
+}
+.nav_logo nav ul li
+{
+    margin: 20px;
+    list-style: none;
+}
+.nav_logo nav ul li a
+{
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+.nav_logo .logo 
+{
+    font-size: 2rem;
+    font-family: 'Ubuntu', sans-serif;
+    color: #fff;
+}
+
+/* home section start  */
+
+.Home
+{
+    width: 100%;
+    height: 100vh;
+    /* background-color: red; */
+}
+.Home .min_home_sec
+{
+    width: 90%;
+    height: 85%;
+    /* background: blanchedalmond; */
+}
+.Home .min_home_sec .text
+{
+    width: 50%;
+    height: 100%;
+    margin-right: 20px;
+    flex-direction: column;
+    align-items: initial;
+    /* background: gold; */
+    color: #fff;
+}
+.Home .min_home_sec .text h1
+{
+    font-size: 4rem;
+    font-family: 'Oswald', sans-serif;
+}
+.Home .min_home_sec .text h2
+{
+    font-size: 1.5rem;
+    color: #fff;
+}
+button
+{
+    margin-top: 20px;
+    width: 140px;
+    height: 40px;
+    background: transparent;
+    color: #fff;
+    border: 2px solid rgb(255, 255, 255);
+    font-size: 1.4rem;
+}
+button:hover
+{
+    background: #fff;
+    color: #000000;
+}
+.Home .min_home_sec .img
+{
+    width: 50%;
+    height: 100%;
+    position: relative;
+    /* background: rgb(189, 173, 82); */
+}
+.Home .min_home_sec .img span
+{
+    width: 110%;
+    height: 15vh;
+    background: var(--c);
+    z-index: -1;
+    bottom: 5%;
+    position: absolute;
+}
+.Home .min_home_sec .text .style
+{
+    position: absolute;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    background: var(--c);
+    clip-path: circle(50% at 9% 21%);
+    z-index: -1;
+}
+.Home .text .icon_sec
+{
+    width: 40%;
+    height: 10vh;
+    margin-top: 20px;
+    font-size: 2rem;
+    /* background: red; */
+    color: #ffffff;
+    justify-content: space-around;
+}
+/* video section  */
+
+.video
+{
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+}
+.video .title
+{
+    width: 100%;
+    height: 10vh;
+}
+.video .title h1
+{
+    font-family: 'Rubik', sans-serif;
+    font-size: 3rem;
+}
+.video .video_grid
+{
+    width: 100%;
+    height:  85%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2,1fr);
+    /* background: red; */
+}
+.video .video_grid .card_width
+{
+    width: 100%;
+    height: 100%;
+    /* background: red; */
+}
+.video .video_grid .card_width .min_card
+{
+    width: 90%;
+    height: 90%;
+    /* background: rgb(255, 255, 255); */
+}
+
+/* blog section start  */
+
+.blog
+{
+    width: 100%;
+    height: 60vh;
+    flex-direction: column;
+    background:#ebe9eb;
+}
+.blog .text
+{
+    width: 100%;
+    height: 10vh;
+    /* background: red; */
+}
+.blog .text h1
+{
+    font-size: 3rem;
+    font-family: 'Rubik', sans-serif;
+}
+.blog .info
+{
+    width: 80%;
+    height: 80%;
+    flex-direction: column;
+    text-align: center;
+    /* background: red; */
+}
+.blog .info h1
+{
+    color: var(--c);
+    letter-spacing: 1px;
+}
+.blog .info p
+{
+    font-size: 1.4rem;
+}
+.blog .info button
+{
+    width: 160px;
+    height: 50px;
+    font-size: 1.2rem;
+    background: #a46497;
+    border: 2px solid #a46497;
+}
+.blog .info button:hover
+{
+    background: transparent;
+}
+
+/* info_sec section */
+
+.info_sec
+{
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+    /* background: red; */
+}
+.info_sec .title
+{
+    width: 100%;
+    height: 10vh;
+    /* background: red; */
+}
+.info_sec .title h1
+{
+    font-family: 'Rubik', sans-serif;
+    font-size: 2.5rem;
+}
+.info_sec .vlog_v
+{
+    width: 100%;
+    height: 90%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    /* background: blue; */
+}
+.info_sec .vlog_sec
+{
+    width: 100%;
+    height: 100%;
+    /* background: red; */
+}
+.info_sec .vlog_sec .vlog_card
+{
+    width: 90%;
+    height: 90%;
+    box-shadow: 0px 0px 5px rgb(202, 202, 202);
+    /* background: rgb(151, 77, 77); */
+}
+.info_sec .vlog_sec .vlog_card .vlog_img
+{
+    width: 100%;
+    height: 60%;
+    /* background: rgb(18, 248, 122); */
+}
+.info_sec .vlog_sec .vlog_card .vlog_text
+{
+    width: 100%;
+    height: 40%;
+    text-align: center;
+    flex-direction: column;
+}
+.info_sec .vlog_sec .vlog_card .vlog_text h1
+{
+    font-size: 2rem;
+}
+.info_sec .vlog_sec .vlog_card .vlog_text h4
+{
+    font-size: 1rem;
+}
+.info_sec .vlog_sec .vlog_card .vlog_text button
+{
+    border: 1px solid #ffffff;
+    color: #000000;
+}
+.info_sec .vlog_sec .vlog_card .vlog_text button:hover
+{
+    background: var(--c);
+    color: #fff;
+}
+
+/* conatct section  */
+.contact 
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    background: #34495e;
+    width: 100%;
+    height: 70vh;
+}
+.contact .text
+{
+    width: 100%;
+    height: 10vh;
+    /* background: red; */
+}
+.contact .text h1
+{
+    font-size: 2.5rem;
+    font-family: 'Rubik', sans-serif;
+    color: #fff;
+}
+.contact .info_sec_con
+{
+    width: 100%;
+    height: 90%;
+    /* background: red; */
+}
+.contact .info_sec_con .img
+{
+    width: 50%;
+    height: 90%;
+    /* background: blue; */
+}
+.contact .info_sec_con .from
+{
+    width: 45%;
+    height: 90%;
+    margin-top: 10px;
+    flex-direction: column;
+}
+.contact .info_sec_con .from input
+{
+    width: 90%;
+    margin-bottom: 20px;
+    outline: none;
+    height: 40px;
+}
+.contact .info_sec_con .from input:nth-child(3)
+{
+    height: 150px;
+}
+.contact .info_sec_con .from button
+{
+    margin-top: 3px;
+    margin-bottom: 10px;
+}
+
+
+
+@media screen and (max-width:1200px){
+    .Home .text .icon_sec{width: 60%;}
+}
+@media screen and (max-width:1000px){ 
+    .video .video_grid{grid-template-columns: repeat(3,1fr);}   
+    .video .video_grid{grid-template-rows: repeat(3,1fr);}
+
+    .info_sec .vlog_v{grid-template-columns: repeat(2,1fr);}
+    .info_sec{height: 160vh;}
+}
+@media screen and (max-width:991px){
+    .Home .min_home_sec{flex-direction: column;}
+    .Home .min_home_sec .text{width: 100%;}
+    .Home .text .icon_sec{width: 30%;}
+    .Home{height: 120vh;}
+    .Home .min_home_sec .img{width: 75%;}
+    .Home .min_home_sec .text .style{width: 100%;clip-path: circle(50% at 32% 31%);}
+    .nav_logo nav ul li #h,#v{color: #fff;}
+ 
+    .video{height: 160vh;}
+    .video .video_grid{grid-template-columns: repeat(2,1fr);}   
+    .video .video_grid{grid-template-rows: repeat(4,1fr);}
+}
+@media screen and (max-width:680px){
+    html{font-size: 80%;}
+    .Home .text .icon_sec{width: 45%;}
+
+    .contact .info_sec_con{flex-direction: column;}
+    .contact{height: 100vh;}
+    .contact .info_sec_con .from{width: 100%;}
+    .contact .info_sec_con .img{width: 90%;}
+}
+@media screen and (max-width:465px){
+    .Home .min_home_sec .text h1{font-size: 3rem;}
+    .Home .text .icon_sec{width: 60%;}
+    .nav_logo nav ul li #h,#v,#c{color: #fff;}
+    .Home .min_home_sec .img{width: 100%;}
+    .Home .min_home_sec .text h2{margin-bottom: 10px;}
+    .nav_logo nav ul li{margin: 10px;}
+
+    .video{height: 300vh;}
+    .video .video_grid{grid-template-columns: repeat(1,1fr);}   
+    .video .video_grid{grid-template-rows: repeat(8,1fr);}
+    .video .video_grid{height: 95%;}
+
+    .info_sec .vlog_v{grid-template-columns: repeat(1,1fr);}
+    .info_sec{height: 230vh;}
+}
+@media screen and (max-width:378px){
+    .blog .info p{font-size: 1.2rem;}
+    .info_sec { height: 295vh;}
+}
+@media screen and (max-width:381px){
+    .nav_logo nav ul li{margin: 5px;}
+    .nav_logo nav ul li a{font-size: 1.3rem;}
+}
+@media screen and (max-width:325px){
+    html{font-size: 60%;}
+    #c{color: #000000;}
+    .contact{height: 120vh;}
+}
